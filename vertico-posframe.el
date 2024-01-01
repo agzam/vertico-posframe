@@ -203,7 +203,7 @@ vertico-posframe works with vertico multiform toggle."
 
 ;; Support vertico-multiform
 (cl-pushnew 'vertico-posframe-mode vertico-multiform--display-modes)
-(vertico-multiform--define-display-toggle posframe)
+;; (vertico-multiform--define-display-toggle posframe)
 (define-key vertico-multiform-map (kbd "M-P") #'vertico-multiform-posframe)
 
 (cl-defmethod vertico--setup
